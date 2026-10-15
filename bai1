@@ -1,0 +1,17 @@
+numbers = list(map(int, input().split()))
+event_count = 0
+old_count = 0
+positive = 0
+
+for number in numbers:
+    if number % 2 == 0:
+            event_count += 1
+    else:
+            old_count += 1
+
+    if number > 0:
+            positive += number
+
+print("event_count:", event_count)
+print("old_cound:", old_count)
+print("positive:", positive)
