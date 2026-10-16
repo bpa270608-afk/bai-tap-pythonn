@@ -12,7 +12,11 @@ for ky_tu in password:
         chu_thuong = True
     if ky_tu.isdigit():
         chu_so = True
+    if ky_tu in "@#$%":
+        ky_tu_dac_biet = True
+
 if len(password) >= 8 and chu_hoa and chu_thuong and chu_so and ky_tu_dac_biet:
-    print(True)
+        print(True)
+        password = input()
 else:
     print(False)
