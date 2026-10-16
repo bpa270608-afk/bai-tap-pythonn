@@ -1,0 +1,18 @@
+password = input()
+
+chu_hoa = False
+chu_thuong = False
+chu_so = False
+ky_tu_dac_biet = False
+
+for ky_tu in password:
+    if ky_tu.isupper():
+        chu_hoa = True
+    if ky_tu.islower():
+        chu_thuong = True
+    if ky_tu.isdigit():
+        chu_so = True
+if len(password) >= 8 and chu_hoa and chu_thuong and chu_so and ky_tu_dac_biet:
+    print(True)
+else:
+    print(False)
