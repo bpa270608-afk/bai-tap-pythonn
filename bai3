@@ -1,0 +1,12 @@
+chuoi = input()
+nguyen_am = "aeiou"
+dem = 0
+
+for ky_tu in chuoi:
+    if ky_tu in nguyen_am:
+        dem += 1
+
+khoang_trang = chuoi.count(" ")
+dao_nguoc = chuoi[::-1]
+
+print((dem, khoang_trang, dao_nguoc))
