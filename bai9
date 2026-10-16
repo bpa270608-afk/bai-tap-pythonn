@@ -1,0 +1,12 @@
+xau = input()
+
+hop_le = True
+
+for ky_tu in xau:
+    if ky_tu != "0" and ky_tu !="1":
+        hop_le = False
+
+if hop_le:
+    print("YES")
+else:
+    print("NO")
