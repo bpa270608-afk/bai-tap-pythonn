@@ -1,0 +1,11 @@
+d = {"Nam": "IT1", "Hoa": "IT2", 'Long': "IT1", "Mai": "IT3"}
+
+ket_qua = {}
+
+for ten in d:
+    lop = d[ten]
+    if lop in ket_qua:
+        ket_qua[lop].append(ten)
+    else:
+        ket_qua[lop] = [ten]
+print(ket_qua)
