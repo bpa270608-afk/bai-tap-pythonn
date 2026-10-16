@@ -1,0 +1,8 @@
+students = [("An", 17, 8.5), ("Binh", 19, 7.0), ("Chi", 20, 9.2), ("Dung", 18, 6.5)]
+min_score = 7.0
+ket_qua = []
+
+for student in students:
+    if student[1] >= 18 and student[2] >= min_score:
+        ket_qua.append(student[0])
+print(ket_qua)
